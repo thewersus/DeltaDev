@@ -148,7 +148,7 @@ local function onPlayerChat(player, message)
         local currentTime = tick()
 
         if revealCooldowns[player.UserId] and currentTime - revealCooldowns[player.UserId] < 10 then
-            return 
+            return
         end
 
         revealCooldowns[player.UserId] = currentTime
